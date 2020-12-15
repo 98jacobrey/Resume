@@ -1,0 +1,105 @@
+@media only screen and (max-width: 600px){
+    .navbar{
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .tabs{
+        justify-content: center;
+    }
+    main{
+        margin: 0;
+        margin-top: 5rem; 
+    }
+}
+@media only screen and (min-width: 600px){
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar:hover{
+        width: 16rem;
+    }
+    .navbar:hover .tab-text{
+        display: inline;
+    }  
+    main{
+        margin-left: 5rem;
+        padding: 1rem;
+    }
+    .navbar-nav{
+        flex-direction: column;
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    width: .25rem;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb{
+    background: whitesmoke;
+}
+main {
+    background: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+.navbar{
+    position: fixed;
+    background-color: rgb(43, 38, 38);
+    transition: width 200ms ease;
+}
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.nav-item{
+    width: 100%; 
+    
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    background-color: rgb(128, 101, 82);
+    color: whitesmoke;
+}
+.tab-text{
+    display: none;
+    margin-left: 1rem;
+    font-size: 25px;
+    align-items: center;
+}
+.info{
+    display: none;
+}
+.expand{
+    background: white;
+}
+.extra{
+    overflow: auto;
+    display: none;
+}
+.content{
+    font-size: 35px;
+}
+.symbol{
+    font-size: 50px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
